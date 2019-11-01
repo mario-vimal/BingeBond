@@ -1,0 +1,15 @@
+{
+  "name": "bingebond",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BingeBond",
+  "scripts": {
+    "watch:go": "APP_ENV=development bra run",
+    "watch": "npm run fmt & npm run watch:go",
+    "prod": "APP_ENV=production go run main.go",
+    "fmt": "gofmt -s -w ."
+  },
+  "author": "Deltaforce",
+  "dependencies": {},
+  "devDependencies": {}
+}

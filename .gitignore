@@ -59,3 +59,4 @@ backend/yarn-error.log
 
 backend/package-lock.json
 backend/backend
+backend/config/config.json

@@ -1,10 +1,12 @@
 package main
 
 import (
+	"os"
+
+	"./models"
 	"./src"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"os"
 )
 
 func main() {
@@ -17,6 +19,10 @@ func main() {
 	app := gin.Default()
 
 	app = src.InitRoutes(app)
+
+	models.InitDb()
+
+	defer models.CloseDB()
 
 	app.Use(cors.Default())
 

@@ -11,3 +11,11 @@ Follow 3 simple steps
 3. Choose the platforms you wish to connect or Choose all.
 
 Go Ahead!
+
+## Reporting Issues
+
+If you think you've found a bug, or something isn't behaving the way you think it should, please raise an [issue](https://github.com/mario-vimal/BingeBond/issues) on GitHub.
+
+# Contributing
+
+Read our [Contribution Guidelines](https://github.com/mario-vimal/BingeBond/blob/master/CONTRIBUTING.md) for information on how you can help out BingeBond.

@@ -20,7 +20,16 @@ go get -u -v github.com/gin-contrib/cors
 go get -u -v github.com/gin-gonic/contrib/static
 go get -u -v github.com/Unknwon/bra
 go get -u -v github.com/fatih/color
+go get -u -v github.com/jinzhu/gorm
+go get -u -v github.com/graph-gophers/graphql-go
 ```
+
+Setting up the database
+ * Create a mysql database
+ * Create a new file called config.json in the config directory
+ * Copy the contents of config.json.example and paste it in the newly created config.json file
+ * Set the correct db name, user and password in config.json file
+`
 
 For development environments...
 

@@ -16,11 +16,12 @@ func main() {
 	if env == "production" {
 		gin.SetMode(gin.ReleaseMode)
 	}
+
+	models.InitDb()
+
 	app := gin.Default()
 
 	app = src.InitRoutes(app)
-
-	models.InitDb()
 
 	defer models.CloseDB()
 

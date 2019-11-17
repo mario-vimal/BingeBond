@@ -1,0 +1,11 @@
+type Platform {
+    Id: Int
+    UserId: Int      
+	PlatformName: String      
+	PlatformToken: String     
+	PlatformId: String      
+	IsLoggedIn: Boolean
+    IsFavourite:Boolean 
+	CreatedAt: String     
+	UpdatedAt: String     
+}

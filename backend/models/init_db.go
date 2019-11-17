@@ -77,7 +77,7 @@ func InitDb() {
 
 	for _, model := range []interface{}{
 		//Add the struct of the Models to be migrated here
-		UserDetail{},
+		UserDetail{}, Platform{},
 	} {
 		if err := db.AutoMigrate(model).Error; err != nil {
 			fmt.Println(color.RedString("Migration failed")+" "+reflect.TypeOf(model).Name(), err)
@@ -87,4 +87,5 @@ func InitDb() {
 	}
 
 	//Add all the foreign key relations here
+	db.Model(&Platform{}).AddForeignKey("user_id", "user_details(user_id)", "RESTRICT", "RESTRICT")
 }

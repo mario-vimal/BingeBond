@@ -1,3 +1,0 @@
-type Query{
-    login(Email: String!, Password: String!): User
-}

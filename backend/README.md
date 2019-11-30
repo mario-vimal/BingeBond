@@ -4,7 +4,6 @@
 
 * [Go]
 * [Gin]
-* [GraphQL]
 
 ### Prerequisites
 
@@ -21,7 +20,6 @@ go get -u -v github.com/gin-gonic/contrib/static
 go get -u -v github.com/Unknwon/bra
 go get -u -v github.com/fatih/color
 go get -u -v github.com/jinzhu/gorm
-go get -u -v github.com/graph-gophers/graphql-go
 ```
 
 Setting up the database
@@ -62,7 +60,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 [Go]: <https://golang.org>
 [Gin]: <https://gin-gonic.github.io/gin>
-[GraphQL]: <https://graphql.org/learn>
 
 ## Reporting Issues
 
